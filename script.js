@@ -1,5 +1,4 @@
-/* PHYSICS HEAVY INTERACTIONS (vanilla JS, no deps)
-
+/* PHYSICS HEAVY INTERACTIONS
 
 (() => {
   const $ = (s, ctx=document) => ctx.querySelector(s);
@@ -405,7 +404,7 @@
     }
   })();
 
-  /* ======== Konami zero-g =============== */
+  /* ======== Konami zero-g (EXPIREMENTAL) =============== */
   (function konami(){
     const code = [38,38,40,40,37,39,37,39,66,65];
     const buf = [];
