@@ -1,18 +1,5 @@
 /* PHYSICS HEAVY INTERACTIONS (vanilla JS, no deps)
-   - Theme toggle (persist)
-   - Mobile nav
-   - Typed gradient headline
-   - Reveal-on-scroll
-   - Physics background: gravity/springs + mouse gravity well
-   - Parallax hero layers
-   - Magnetic buttons
-   - Physics settle for projects grid
-   - Tilt cards + spring modal
-   - Odometer counters
-   - Orbital testimonials (CSS)
-   - Contact burst particles
-   - Konami code -> zero gravity
-*/
+
 
 (() => {
   const $ = (s, ctx=document) => ctx.querySelector(s);
