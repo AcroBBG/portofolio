@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Youssef Abbas — Physics-Driven Front‑End</title>
+  <meta name="description" content="An immersive, physics-driven portfolio by Youssef Abbas. High-performance, accessible, and packed with interactive features.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <meta name="theme-color" content="#090e17">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Physics background canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="nav glass" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="Home - Youssef Abbas">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 L12 4 L20 20 Z"/></svg>
+        </div>
+        <span class="brand-text">Youssef Abbas</span>
+        <span class="badge">Physics ↑</span>
+      </a>
+      <nav id="nav" class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#numbers">Numbers</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <div class="controls">
+        <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">🌓</button>
+        <button id="menu-btn" class="icon-btn" aria-expanded="false" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Off-canvas mobile nav -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <nav class="mobile-list">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
+      <a href="#numbers">Numbers</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- HERO with layered 3D parallax -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-stack" aria-hidden="true">
+          <div class="layer layer-stars" data-depth="0.05"></div>
+          <div class="layer layer-orbs" data-depth="0.1"></div>
+          <div class="layer layer-grid" data-depth="0.2"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">INTERACTIVE • PHYSICS • ACCESSIBLE</p>
+          <h1 class="hero-title">
+            <span class="name plasma">Youssef Abbas</span>
+            <span class="headline">
+              <span class="gradient-text" data-text="Interfaces with real-world physics • HTML · CSS · JS"></span>
+            </span>
+          </h1>
+          <p class="lead">I build ultra-responsive, physics-accurate front-ends with delightful micro‑interactions and performance that screams.</p>
+
+          <div class="hero-cta">
+            <a class="btn primary magnetic" href="#projects">Explore Work</a>
+            <a class="btn ghost magnetic" href="#contact">Start a Project</a>
+          </div>
+
+          <ul class="key-stats" aria-hidden="true">
+            <li><strong>95%</strong><span>HTML</span></li>
+            <li><strong>93%</strong><span>CSS</span></li>
+            <li><strong>91%</strong><span>JavaScript</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="device tilt" id="device" tabindex="0">
+            <div class="screen">
+              <svg viewBox="0 0 600 380" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#00e7ff"/>
+                    <stop offset="1" stop-color="#ff3db4"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" rx="18" fill="url(#g1)"/>
+                <g opacity=".2">
+                  <circle cx="100" cy="80" r="40" fill="#fff"/>
+                  <circle cx="300" cy="210" r="70" fill="#fff"/>
+                  <circle cx="520" cy="120" r="50" fill="#fff"/>
+                </g>
+              </svg>
+            </div>
+            <div class="glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I craft resilient, accessible UIs with physics-based motion that feels natural. Token-driven CSS, semantic HTML, and explicit vanilla JS — no bloat.</p>
+            <ul class="about-list">
+              <li>Real-time canvas animations (60fps target)</li>
+              <li>Progressive enhancement, graceful fallback</li>
+              <li>Strict a11y and performance budgets</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="/assets/Youssef-Abbas-CV.pdf" download>Download CV</a>
+              <a class="link" href="https://github.com/AcroBBG" target="_blank" rel="noopener">GitHub</a>
+              <a class="link" href="https://www.linkedin.com/in/youssef-abbas-719648326/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+          <aside class="about-card glass" aria-hidden="true">
+            <div class="meta-row"><strong>Location</strong><span>Cairo, Egypt</span></div>
+            <div class="meta-row"><strong>Role</strong><span>Front-End Developer</span></div>
+            <div class="meta-row"><strong>Focus</strong><span>Physics UX • Performance</span></div>
+            <div class="meta-row"><strong>Contact</strong><span>hello@example.com</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-wrap">
+          <div class="rings">
+            <div class="ring" data-value="95" aria-label="HTML 95 percent">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="bar"/></svg>
+              <div class="ring-label"><strong>95</strong><span>HTML</span></div>
+            </div>
+            <div class="ring" data-value="93" aria-label="CSS 93 percent">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="bar"/></svg>
+              <div class="ring-label"><strong>93</strong><span>CSS</span></div>
+            </div>
+            <div class="ring" data-value="91" aria-label="JavaScript 91 percent">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" class="bg"/><circle cx="60" cy="60" r="48" class="bar"/></svg>
+              <div class="ring-label"><strong>91</strong><span>JS</span></div>
+            </div>
+          </div>
+
+          <div class="skill-details">
+            <h3>Approach</h3>
+            <p>Physics-based motion (springs, inertia), container queries where supported, GPU-friendly animation, and micro-interactions that earn attention.</p>
+            <ul>
+              <li>Tokenized design system</li>
+              <li>ARIA patterns & focus traps</li>
+              <li>0-dependency vanilla JS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (physics settle) -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Selected Work</h2>
+        <div class="projects-grid physics-grid" role="list">
+          <article class="project tilt" role="listitem" tabindex="0"
+                   data-title="Realtime Dashboard"
+                   data-desc="Websocket-driven dashboard with GPU-accelerated charts."
+                   data-live="#"
+                   data-code="#">
+            <div class="thumb mockup" aria-hidden="true"><div class="mock-macbar"></div></div>
+            <h3>Realtime Dashboard</h3>
+            <p class="muted">WebSocket • Canvas</p>
+            <div class="project-actions">
+              <button class="open btn ghost magnetic" aria-haspopup="dialog">Open</button>
+            </div>
+          </article>
+
+          <article class="project tilt" tabindex="0"
+                   data-title="Physics Playground"
+                   data-desc="Interactive particle systems and spring-based UI components."
+                   data-live="#"
+                   data-code="#">
+            <div class="thumb mockup" aria-hidden="true"><div class="mock-macbar"></div></div>
+            <h3>Physics Playground</h3>
+            <p class="muted">Springs • Particles</p>
+            <div class="project-actions">
+              <button class="open btn ghost magnetic" aria-haspopup="dialog">Open</button>
+            </div>
+          </article>
+
+          <article class="project tilt" tabindex="0"
+                   data-title="Design System"
+                   data-desc="Tokenized, scalable UI kit — consistent, fast, and easy to ship."
+                   data-live="#"
+                   data-code="#">
+            <div class="thumb mockup" aria-hidden="true"><div class="mock-macbar"></div></div>
+            <h3>Design System</h3>
+            <p class="muted">Tokens • A11y</p>
+            <div class="project-actions">
+              <button class="open btn ghost magnetic" aria-haspopup="dialog">Open</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUMBERS (odometer) -->
+    <section id="numbers" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Numbers</h2>
+        <div class="numbers-grid">
+          <div class="num-card glass">
+            <div class="label">Projects Shipped</div>
+            <div class="odometer" data-target="128"></div>
+          </div>
+          <div class="num-card glass">
+            <div class="label">Avg Lighthouse</div>
+            <div class="odometer" data-target="98"></div>
+          </div>
+          <div class="num-card glass">
+            <div class="label">Avg FPS</div>
+            <div class="odometer" data-target="60"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal" role="dialog" aria-hidden="true" aria-modal="true">
+      <div class="modal-panel" role="document">
+        <button class="close" aria-label="Close project">&times;</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div class="modal-links">
+          <a id="modal-live" class="btn primary magnetic" target="_blank" rel="noopener">Live</a>
+          <a id="modal-code" class="btn ghost magnetic" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS (orbital) -->
+    <section id="testimonials" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="orbit">
+          <div class="sun">Wall of Love</div>
+          <div class="planet p1"><blockquote>“Built it fast, clean, and delightful.” — Product Lead</blockquote></div>
+          <div class="planet p2"><blockquote>“Physics interactions feel natural.” — Designer</blockquote></div>
+          <div class="planet p3"><blockquote>“Performance wizard. 100/100.” — CTO</blockquote></div>
+          <div class="planet p4"><blockquote>“Obsessed with details.” — Founder</blockquote></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form id="contact-form" class="contact glass" novalidate>
+          <div class="form-grid">
+            <label>
+              <span class="label-text">Name</span>
+              <input name="name" id="c-name" type="text" required minlength="2" autocomplete="name">
+            </label>
+            <label>
+              <span class="label-text">Email</span>
+              <input name="email" id="c-email" type="email" required autocomplete="email">
+            </label>
+          </div>
+          <label class="full">
+            <span class="label-text">Message</span>
+            <textarea id="c-message" name="message" rows="6" required minlength="10" placeholder="Tell me about your product and goals…"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary magnetic" type="submit">Send message</button>
+            <button class="btn ghost magnetic" type="reset">Reset</button>
+          </div>
+          <div id="burst-layer" aria-hidden="true"></div>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> <strong>Youssef Abbas</strong></div>
+      <div class="socials">
+        <a href="https://github.com/AcroBBG" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/youssef-abbas-719648326/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="modal small" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel">
+      <p>✅ Message queued (demo). Thank you — I’ll reply soon.</p>
+      <button class="close" aria-label="Close">Close</button>
+    </div>
+  </div>
+</body>
+</html>
